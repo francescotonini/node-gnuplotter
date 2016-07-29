@@ -1,0 +1,34 @@
+{
+  "name": "gnuplotter",
+  "version": "1.0.0",
+  "description": "An easy to use nodejs module to draw charts using gnuplot",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francescotonini/node-gnuplotter.git"
+  },
+  "keywords": [
+    "gnuplot",
+    "nodejs",
+    "plotter",
+    "gnuplotter"
+  ],
+  "author": "Francesco Tonini <francescoantoniotonini@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/francescotonini/node-gnuplotter/issues"
+  },
+  "homepage": "https://github.com/francescotonini/node-gnuplotter#readme",
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "mocha": "^2.5.3",
+    "should": "^10.0.0"
+  },
+  "dependencies": {
+    "underscore": "^1.4.4"
+  }
+}
