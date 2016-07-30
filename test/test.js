@@ -19,7 +19,7 @@ describe('Plot tests', function() {
 		it('Output1', function(done) {
 			plot({
 				title:		'svg example',
-				data:		{ 'tick' : [ 3, 1, 2, 3, 4, 15, 3, 2, 4, 11 ], 'line' : { 1: 5, 5: 6 } },
+				data:		{ 'tick' : [3, 1, 2, 3, 4, 15, 3, 2, 4, 11], 'line' : { 1: 5, 5: 6 } },
 				style:		'lines',
 				filename:	'test/output11.svg',
 				format:		'svg',
@@ -41,7 +41,7 @@ describe('Plot tests', function() {
 
 		it('Output2', function(done) {
 			plot({
-				data:		[ 3, 1, 2, 3, 4 ],
+				data:		[3, 1, 2, 3, 4],
 				filename:	'test/output2.png',
 				style:		'linespoints',
 				title:		'Example \'Title\', \\n runs onto multiple lines',
@@ -56,7 +56,7 @@ describe('Plot tests', function() {
 		it('Output3', function(done) {
 			plot({
 				title:		'example',
-				data:		{ 'tick' : [ 3, 1, 2, 3, 4 ] },
+				data:		{ 'tick' : [3, 1, 2, 3, 4] },
 				style:		'lines',
 				filename:	'test/output3.png',
 				format:		'png',
@@ -67,7 +67,7 @@ describe('Plot tests', function() {
 		it('Output4', function(done) {
 			plot({
 				title:		'example',
-				data:		{ 'tick' : [ 3, 1, 2, 3, 4 ], 'line' : { 1: 5, 5: 6 } },
+				data:		{ 'tick' : [3, 1, 2, 3, 4], 'line' : { 1: 5, 5: 6 } },
 				style:		'lines',
 				filename:	'test/output4.png',
 				format:		'png',
@@ -78,7 +78,7 @@ describe('Plot tests', function() {
 		it('Output5', function(done) {
 			plot({
 				title:		'example',
-				data:		{ 'tick' : [ 3, 1, 2, 3, 4 ], 'line' : { 1: 5, 5: 6 } },
+				data:		{ 'tick' : [3, 1, 2, 3, 4], 'line' : { 1: 5, 5: 6 } },
 				style:		'lines',
 				filename:	'test/output5.png',
 				format:		'png',
@@ -89,7 +89,7 @@ describe('Plot tests', function() {
 		it('Output6', function(done) {
 			plot({
 				title:		'example',
-				data:		{ 'tick' : [ 3, 1, 2, 3, 4, 15, 3, 2, 4, 11 ], 'tick2' : [ 3, 10, 2, 30, 4, 15, 3, 20, 4, 11 ], 'line' : { 1: 5, 5: 6 } },
+				data:		{ 'tick' : [3, 1, 2, 3, 4, 15, 3, 2, 4, 11], 'tick2' : [3, 10, 2, 30, 4, 15, 3, 20, 4, 11], 'line' : { 1: 5, 5: 6 } },
 				moving_avg:	4,
 				style:		'lines',
 				filename:	'test/output6.png',
@@ -101,7 +101,7 @@ describe('Plot tests', function() {
 		it('Output7', function(done) {
 			plot({
 				title:		'example',
-				data:		{ 'tick' : [ 3, 1, 2, 3, 4, 15, 3, 2, 4, 11 ], 'tick2' : [ 3, 10, 2, 30, 4, 15, 3, 20, 4, 11 ], 'line' : { 1: 5, 5: 6 } },
+				data:		{ 'tick' : [3, 1, 2, 3, 4, 15, 3, 2, 4, 11], 'tick2' : [3, 10, 2, 30, 4, 15, 3, 20, 4, 11], 'line' : { 1: 5, 5: 6 } },
 				moving_max:	2,
 				style:		'lines',
 				filename:	'test/output7.png',
@@ -113,7 +113,7 @@ describe('Plot tests', function() {
 		it('Output8', function(done) {
 			plot({
 				title:		'example',
-				data:		{ 'tick' : [ 3, 1, 2, 3, 4, 15, 3, 2, 4, 11 ], 'tick2' : [ 3, 10, 2, 30, 4, 15, 3, 20, 4, 11 ], 'line' : { 1: 5, 5: 6 } },
+				data:		{ 'tick' : [3, 1, 2, 3, 4, 15, 3, 2, 4, 11], 'tick2' : [3, 10, 2, 30, 4, 15, 3, 20, 4, 11], 'line' : { 1: 5, 5: 6 } },
 				moving_max:	2,
 				style:		'lines',
 				filename:	'test/output8.png',
@@ -126,7 +126,7 @@ describe('Plot tests', function() {
 		it('Output9', function(done) {
 			plot({
 				title:		'bad_example',
-				data:		{ 'tick' : [ 3, 1, 2, 3, 4, 15, 3, 2, 4, 11 ], 'tick2' : function(i) { return i; }, 'line' : { 1: 5, 5: 6 } },
+				data:		{ 'tick' : [3, 1, 2, 3, 4, 15, 3, 2, 4, 11], 'tick2' : function(i) { return i; }, 'line' : { 1: 5, 5: 6 } },
 				moving_max:	2,
 				style:		'lines',
 				filename:	'test/output9.png',
@@ -231,7 +231,6 @@ describe('Plot tests', function() {
 					yOffset: -1.5,
 					xOffset: -2
 				},
-				hideSeriesTitle: true,
 				lineStyle: [
 					{
 						'color': 'green',
@@ -244,10 +243,15 @@ describe('Plot tests', function() {
 
 		it('Output15', function(done) {
 			plot({
+				font: 		'arial',
+				fontSize:   16,
+				titleSize:  30,
+				width:      1366,
+				height:     768,
 				title:		'example',
 				data:		{ 'temperature' : { 1357162672: 22, 1357162782: 23, 1357162892: 24 } },
 				time:		'%d %b',
-				style:		'linespoints',
+				style:		'line',
 				filename:	'test/output15.png',
 				format:		'png',
 				finish: function(error, stdout, stderr) { handleResult(error, stdout, stderr, done); }
