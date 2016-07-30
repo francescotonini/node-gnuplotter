@@ -57,6 +57,11 @@ The following properties can be used:
 - `lineStyles`: _Applies additional style to each serie_
 - `decimalsign`: _Specifies a custom decimal sign_
 - `yFormat`: _Specifies how to format values on the Y axis_
+- `font`: _Specify a custom font_
+- `fontSize`: _Font size_
+- `titleSize`: _Title font size_
+- `width`: _Plot width_
+- `height`: _Plot height_
 
 The following example shows these in use:
 
