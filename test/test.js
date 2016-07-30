@@ -241,5 +241,17 @@ describe('Plot tests', function() {
 				finish: function(error, stdout, stderr) { handleResult(error, stdout, stderr, done); }
 			});
 		});
+
+		it('Output15', function(done) {
+			plot({
+				title:		'example',
+				data:		{ 'temperature' : { 1357162672: 22, 1357162782: 23, 1357162892: 24 } },
+				time:		'%d %b',
+				style:		'linespoints',
+				filename:	'test/output15.png',
+				format:		'png',
+				finish: function(error, stdout, stderr) { handleResult(error, stdout, stderr, done); }
+			});
+		});
 	});
 });
