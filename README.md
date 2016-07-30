@@ -62,6 +62,7 @@ The following properties can be used:
 - `titleSize`: _Title font size_
 - `width`: _Plot width_
 - `height`: _Plot height_
+- `locale`: _Locale code (run 'set locale' for the exact value)_
 
 The following example shows these in use:
 
