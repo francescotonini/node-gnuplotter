@@ -123,19 +123,6 @@ describe('Plot tests', function() {
 			});
 		});
 
-		it('Output9', function(done) {
-			plot({
-				title:		'bad_example',
-				data:		{ 'tick' : [3, 1, 2, 3, 4, 15, 3, 2, 4, 11], 'tick2' : function(i) { return i; }, 'line' : { 1: 5, 5: 6 } },
-				moving_max:	2,
-				style:		'lines',
-				filename:	'test/output9.png',
-				nokey:		true,
-				format:		'png',
-				finish: function(error, stdout, stderr) { handleResult(error, stdout, stderr, done); }
-			});
-		});
-
 		it('Output10', function(done) {
 			plot({
 				title:		'example',
@@ -209,6 +196,7 @@ describe('Plot tests', function() {
 
 		it('Output14', function(done) {
 			plot({
+				locale:     'it_IT.UTF-8',
 				title:		'example',
 				data:		{ 't1' : { 1357162672: 22.2, 1357162782: 23, 1357162892: 24 } },
 				time:		'hours',
