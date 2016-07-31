@@ -54,7 +54,8 @@ The following properties can be used:
 - `nokey` : _Disables the graph key_
 - `hideSeriesTitle`: _Indicates if plot should include legend_
 - `margin`: _Sets margin if needed_
-- `range`: _Sets max and min values for the X axis_
+- `xRange`: _Sets max and min values for the X axis_
+- `yRange`: _Sets max and min values for the Y axis_
 - `decimalsign`: _Specifies a custom decimal sign_
 - `yFormat`: _Specifies how to format values on the Y axis_
 - `font`: _Specify a custom font_
@@ -91,7 +92,7 @@ plot({
 		xOffset: -2
 	},
 	hideSeriesTitle: true,
-	range: {
+	xRange: {
 		min: 0,
 		max: 100
 	}

@@ -243,9 +243,13 @@ describe('Plot tests', function() {
 				style:		'line',
 				filename:	'test/output16.png',
 				format:		'png',
-				range: {
+				xRange: {
 					min: 1357162672,
 					max: 1357162892
+				},
+				yRange: {
+					min: 18,
+					max: 30
 				},
 				finish: function(error, stdout, stderr) { handleResult(error, stdout, stderr, done); }
 			});
