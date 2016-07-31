@@ -1,6 +1,6 @@
 {
   "name": "gnuplotter",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "An easy to use nodejs module to draw charts using gnuplot",
   "main": "index.js",
   "scripts": {
