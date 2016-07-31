@@ -162,16 +162,6 @@ describe('Plot tests', function() {
 				filename:	'test/output12.png',
 				format:		'png',
 				hideSeriesTitle: true,
-				lineStyle: [
-					{
-						'color': 'yellow',
-						'weight': 2
-					},
-					{
-						'color': 'blue',
-						'weight': 4
-					}
-				],
 				finish: function(error, stdout, stderr) { handleResult(error, stdout, stderr, done); }
 			});
 		});
@@ -219,12 +209,6 @@ describe('Plot tests', function() {
 					yOffset: -1.5,
 					xOffset: -2
 				},
-				lineStyle: [
-					{
-						'color': 'green',
-						'weight': 2
-					}
-				],
 				finish: function(error, stdout, stderr) { handleResult(error, stdout, stderr, done); }
 			});
 		});
@@ -242,6 +226,27 @@ describe('Plot tests', function() {
 				style:		'line',
 				filename:	'test/output15.png',
 				format:		'png',
+				finish: function(error, stdout, stderr) { handleResult(error, stdout, stderr, done); }
+			});
+		});
+
+		it('Output16', function(done) {
+			plot({
+				font: 		'arial',
+				fontSize:   16,
+				titleSize:  30,
+				width:      1366,
+				height:     768,
+				title:		'example',
+				data:		{ 'temperature' : { 1357162672: 22, 1357162782: 23, 1357162892: 24 } },
+				time:		'%d %b',
+				style:		'line',
+				filename:	'test/output16.png',
+				format:		'png',
+				range: {
+					min: 1357162672,
+					max: 1357162892
+				},
 				finish: function(error, stdout, stderr) { handleResult(error, stdout, stderr, done); }
 			});
 		});
